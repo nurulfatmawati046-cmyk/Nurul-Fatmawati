@@ -211,6 +211,90 @@ footer{
   font-size:14px;
   margin-top:50px;
 }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px){
+  section{
+    padding:80px 6%;
+  }
+
+  .hero{
+    gap:40px;
+  }
+}
+
+@media (max-width: 768px){
+  nav{
+    padding:15px 20px;
+  }
+
+  nav ul{
+    position:absolute;
+    top:60px;
+    right:0;
+    width:100%;
+    background:#000;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    padding:20px 0;
+    display:none;
+  }
+
+  nav ul.active{
+    display:flex;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:140px;
+  }
+
+  .avatar{
+    width:180px;
+    height:180px;
+    font-size:80px;
+  }
+
+  h1{
+    font-size:26px;
+  }
+
+  p{
+    font-size:14px;
+  }
+
+  .btn{
+    font-size:14px;
+    padding:8px 18px;
+  }
+}
+
+@media (max-width: 480px){
+  section{
+    padding:70px 5%;
+  }
+
+  h2{
+    font-size:22px;
+  }
+
+  .avatar{
+    width:150px;
+    height:150px;
+    font-size:65px;
+  }
+
+  footer{
+    font-size:12px;
+  }
+}
+
 </style>
 </head>
 
@@ -240,7 +324,7 @@ footer{
 </section>
 
 <!-- ABOUT --> 
-<section id="about" class="about reveal"> 
+<section id="About" class="about reveal"> 
   <h2>About Me</h2> 
   <p> Bachelor of Informatics Engineering, Universitas Maarif Hasyim Latif Sidoarjo, 2025 
     with a strong foundation in software development, problem-solving, and system design. 
@@ -252,7 +336,7 @@ footer{
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="reveal">
+<section id="Skills" class="reveal">
    <h2>Skills</h2>
     <div class="skill">HTML & CSS 
       <div class="bar">
@@ -276,21 +360,21 @@ footer{
  </section>
 
  <!-- EXPERIENCE --> 
- <section id="experience" class="timeline reveal"> 
+ <section id="Education" class="timeline reveal"> 
   <h2>Education</h2> 
   <div class="item">Bachelor of Informatics Engineering – Universitas Maarif Hasyim Latif Sidoarjo, 2025 (2025)</div> 
   <div class="item">Development of an IoT-Based Solar Panel Tracker as a Power Supply for an Automatic Garden Irrigation System (Skripsi)</div> 
   <div class="item">Computer and Network Engineering – SMK Yapalis Krian (2019)</div> 
 </section> 
 
-<section id="experience" class="timeline reveal"> 
+<section id="Experience" class="timeline reveal"> 
   <h2>Experience</h2> 
   <div class="item">Freelance Web Development, 2024</div>
   
 </section> 
 
 <!-- PROJECT --> 
-<section id="projects" class="reveal"> 
+<section id="Projects" class="reveal"> 
   <h2>Portfolio</h2> 
   <div class="projects"> 
     <div class="card"><img src="Desain.jpg"><p>Desain Banner</p></div> 
