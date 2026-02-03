@@ -293,6 +293,43 @@ footer{
   footer{
     font-size:12px;
   }
+/* ================= MEDIA QUERY FIX ================= */
+
+/* ===== TABLET ===== */
+@media (max-width: 992px){
+  section{
+    padding:90px 6%;
+  }
+
+  .hero{
+    gap:40px;
+  }
+
+  .hero-text h1{
+    font-size:32px;
+  }
+
+  .avatar{
+    width:200px;
+    height:200px;
+    font-size:90px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px){
+
+  /* NAVBAR */
+  nav{
+    padding:12px 20px;
+  }
+
+  nav ul{
+    position:absolute;
+    top:65px;
+    right:0;
+    width:100%;
+
 }
 
 </style>
@@ -307,6 +344,7 @@ footer{
   <ul id="menu">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Portfolio</a></li>
     <li><a href="#contact">Contact</a></li>
