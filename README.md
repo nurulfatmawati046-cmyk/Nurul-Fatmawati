@@ -1,5 +1,3 @@
-# MyPortofolio
-<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -237,7 +235,7 @@ footer{
   <div class="hero-text">
     <h1>Hello, Am <span>Nurul Fatmawati</span></h1>
     <p>Development IT and Design</p>
-    <a href="cv.pdf" class="btn">Download CV</a>
+    <a href="CV.pdf" class="btn">Download CV</a>
   </div>
 </section>
 
@@ -260,7 +258,6 @@ footer{
       <div class="bar">
         <div class="progress" data-width="95%"></div></div>
   </div> 
-    
     <div class="skill">JavaScript, Node.js, Java 
       <div class="bar"><div class="progress" data-width="87%"></div></div> 
   </div> 
