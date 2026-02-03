@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -8,6 +7,8 @@
 <meta name="description" content="Portfolio dan CV Online Development IT">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- ✅ TAMBAHAN ICON -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -39,7 +40,9 @@ nav{
   z-index:1000;
 }
 
-nav h2{color:#00f7ff}
+nav h2{
+  color:#00f7ff;
+}
 
 nav ul{
   display:flex;
@@ -48,12 +51,14 @@ nav ul{
 }
 
 nav a{
-  color:#fff;
+  color:white;
   text-decoration:none;
   font-size:14px;
 }
 
-nav a:hover{color:#00f7ff}
+nav a:hover{
+  color:#00f7ff;
+}
 
 .menu-toggle{
   display:none;
@@ -92,6 +97,8 @@ h2{
   align-items:center;
   justify-content:center;
   font-size:110px;
+  color:#000;
+  font-weight:bold;
   box-shadow:0 0 40px #00f7ff;
   animation:float 4s ease-in-out infinite;
 }
@@ -101,36 +108,28 @@ h2{
   50%{transform:translateY(-15px)}
 }
 
-.hero-text span{color:#00f7ff}
+.hero-text span{
+  color:#00f7ff;
+}
 
 .btn{
   margin-top:20px;
   display:inline-block;
-  padding:10px 22px;
+  padding:10px 20px;
   background:#00f7ff;
   color:#000;
   text-decoration:none;
   border-radius:6px;
-  font-weight:600;
+  font-weight:bold;
 }
 
 /* ================= SKILLS ================= */
-.skill{margin-bottom:18px}
-.bar{
-  background:#1c2333;
-  height:10px;
-  border-radius:20px;
-  overflow:hidden;
-}
-.progress{
-  height:100%;
-  background:#00f7ff;
-  width:0;
-  transition:2s;
-}
+.skill{margin-bottom:18px;}
+.bar{background:#1c2333;height:10px;border-radius:20px;overflow:hidden;}
+.progress{height:100%;background:#00f7ff;width:0;transition:2s;}
 
 /* ================= TIMELINE ================= */
-.timeline{max-width:800px;margin:auto}
+.timeline{max-width:800px;margin:auto;}
 .item{
   margin-bottom:20px;
   padding:20px;
@@ -153,17 +152,14 @@ h2{
   transition:.3s;
 }
 
-.card img{
-  width:100%;
-  border-radius:8px;
-}
+.card img{width:100%;border-radius:8px;}
 
 .card:hover{
   transform:translateY(-6px);
   box-shadow:0 0 15px #00f7ff;
 }
 
-/* ================= CONTACT ================= */
+/* ================= CONTACT ICON STYLE (BARU) ================= */
 .contact-icons{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -182,6 +178,7 @@ h2{
   justify-content:center;
   gap:10px;
   transition:.3s;
+  font-weight:500;
 }
 
 .contact-item i{
@@ -214,55 +211,12 @@ footer{
   font-size:14px;
   margin-top:50px;
 }
-
-/* ================= RESPONSIVE ================= */
-@media (max-width:768px){
-  nav{padding:15px 20px}
-
-  nav ul{
-    position:absolute;
-    top:60px;
-    right:0;
-    width:100%;
-    background:#000;
-    flex-direction:column;
-    align-items:center;
-    gap:18px;
-    padding:20px 0;
-    display:none;
-  }
-
-  nav ul.active{display:flex}
-  .menu-toggle{display:block}
-
-  .hero{
-    flex-direction:column;
-    text-align:center;
-    gap:40px;
-  }
-
-  .avatar{
-    width:180px;
-    height:180px;
-    font-size:80px;
-  }
-
-  h1{font-size:26px}
-}
-
-@media (max-width:480px){
-  section{padding:80px 5%}
-  .avatar{
-    width:150px;
-    height:150px;
-    font-size:65px;
-  }
-}
 </style>
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
   <h2>Nurul Fatmawati</h2>
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -275,55 +229,109 @@ footer{
   </ul>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="avatar">👩‍💻</div>
   <div class="hero-text">
     <h1>Hello, Am <span>Nurul Fatmawati</span></h1>
     <p>Development IT and Design</p>
-    <a href="./CV.pdf" class="btn" download>Download CV</a>
+    <a href="CV.pdf" class="btn">Download CV</a>
   </div>
 </section>
 
-<section id="about" class="reveal">
-  <h2>About Me</h2>
-  <p>
-    Bachelor of Informatics Engineering, Universitas Maarif Hasyim Latif Sidoarjo, 2025.
-    Passionate about building efficient, reliable, and user-friendly digital solutions.
-  </p>
+<!-- ABOUT --> 
+<section id="about" class="about reveal"> 
+  <h2>About Me</h2> 
+  <p> Bachelor of Informatics Engineering, Universitas Maarif Hasyim Latif Sidoarjo, 2025 
+    with a strong foundation in software development, problem-solving, and system design. 
+    Passionate about building efficient, reliable, and user-friendly digital solutions. 
+    Possess strong analytical thinking, adaptability, and the ability to work both independently and 
+    collaboratively in a team environment. Eager to contribute, continuously learn, 
+    and grow in diverse technology-driven environments. 
+  </p> 
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="reveal">
-  <h2>Skills</h2>
-  <div class="skill">HTML & CSS<div class="bar"><div class="progress" data-width="95%"></div></div></div>
-  <div class="skill">JavaScript & Java<div class="bar"><div class="progress" data-width="87%"></div></div></div>
-  <div class="skill">Python<div class="bar"><div class="progress" data-width="85%"></div></div></div>
-</section>
-
-<section id="experience" class="timeline reveal">
-  <h2>Experience</h2>
-  <div class="item">Freelance Web Development – 2024</div>
-</section>
-
-<section id="projects" class="reveal">
-  <h2>Portfolio</h2>
-  <div class="projects">
-    <div class="card"><img src="Desain.jpg"><p>Desain Banner</p></div>
-    <div class="card"><img src="project2.png"><p>Website Profile School</p></div>
-    <div class="card"><img src="project3.png"><p>Web Monitoring IoT</p></div>
-    <div class="card"><img src="project4.png"><p>UI/UX App</p></div>
+   <h2>Skills</h2>
+    <div class="skill">HTML & CSS 
+      <div class="bar">
+        <div class="progress" data-width="95%"></div></div>
+  </div> 
+    <div class="skill">JavaScript, Node.js, Java 
+      <div class="bar"><div class="progress" data-width="87%"></div></div> 
+  </div> 
+  
+  <div class="skill">Python 
+    <div class="bar"><div class="progress" data-width="85%"></div></div> 
+  </div> 
+  
+  <div class="skill">DataBase 
+    <div class="bar"><div class="progress" data-width="80%"></div> </div> 
   </div>
+
+  <div class="skill">Language English 
+    <div class="bar"><div class="progress" data-width="80%"></div></div> 
+  </div>
+ </section>
+
+ <!-- EXPERIENCE --> 
+ <section id="experience" class="timeline reveal"> 
+  <h2>Education</h2> 
+  <div class="item">Bachelor of Informatics Engineering – Universitas Maarif Hasyim Latif Sidoarjo, 2025 (2025)</div> 
+  <div class="item">Development of an IoT-Based Solar Panel Tracker as a Power Supply for an Automatic Garden Irrigation System (Skripsi)</div> 
+  <div class="item">Computer and Network Engineering – SMK Yapalis Krian (2019)</div> 
+</section> 
+
+<section id="experience" class="timeline reveal"> 
+  <h2>Experience</h2> 
+  <div class="item">Freelance Web Development, 2024</div>
+  
+</section> 
+
+<!-- PROJECT --> 
+<section id="projects" class="reveal"> 
+  <h2>Portfolio</h2> 
+  <div class="projects"> 
+    <div class="card"><img src="Desain.jpg"><p>Desain Banner</p></div> 
+    <div class="card"><img src="project2.png"><p>Website Profile School</p></div> 
+    <div class="card"><img src="project3.png"><p>Web Monitoring IoT</p></div> 
+    <div class="card"><img src="project4.png"><p>UI/UX App</p></div> 
+  </div> 
 </section>
 
-<section id="contact" class="reveal">
+<!-- CONTACT (SUDAH BER-ICON & CLICKABLE) -->
+<section id="contact" class="contact reveal">
   <h2>Contact</h2>
+
   <div class="contact-icons">
-    <a href="mailto:nurulfatmawati046@gmail.com" class="contact-item"><i class="fa-solid fa-envelope"></i>Email</a>
-    <a href="https://github.com/nurulfatmawati046-cmyk" target="_blank" class="contact-item"><i class="fa-brands fa-github"></i>GitHub</a>
-    <a href="https://www.linkedin.com" target="_blank" class="contact-item"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+
+    <a href="https://wa.me/6285943734618" target="_blank" class="contact-item">
+      <i class="fa-solid fa-phone"></i> WhatsApp
+    </a>
+
+    <a href="mailto:nurulfatmawati046@gmail.com" class="contact-item">
+      <i class="fa-solid fa-envelope"></i> Email
+    </a>
+
+    <a href="https://instagram.com/nurul_fatmawati.22" target="_blank" class="contact-item">
+      <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+
+    <a href="https://github.com/nurulfatmawati046-cmyk" target="_blank" class="contact-item">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/nurul-fatmawati-81b960378" target="_blank" class="contact-item">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+
   </div>
 </section>
 
-<footer>© 2025 Nurul Fatmawati</footer>
+<footer>
+  © 2025 Nurul Fatmawati. All Rights Reserved.
+</footer>
 
 <script>
 window.addEventListener("scroll",()=>{
@@ -332,6 +340,7 @@ window.addEventListener("scroll",()=>{
       el.classList.add("active");
     }
   });
+
   document.querySelectorAll(".progress").forEach(bar=>{
     if(bar.getBoundingClientRect().top < window.innerHeight){
       bar.style.width = bar.dataset.width;
